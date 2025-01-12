@@ -17,7 +17,7 @@ int main(void){
             if (a >= i){
                 s.push(i++);
                 p += "+\n";
-                r++;
+                r++; 
             }
             else if (!s.empty() && a == s.top()){
                 s.pop();
