@@ -18,7 +18,7 @@ dis=[INF for i in range(V)]
 def dijkstra(start):
     q=[]
     heapq.heappush(q,(0,start))
-    dis[0]=0
+    dis[start]=0
 
     while q:
         d,n = heapq.heappop(q)
