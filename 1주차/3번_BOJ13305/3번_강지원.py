@@ -8,9 +8,7 @@ oil=list(map(int,sys.stdin.readline().split()))
 
 min_oil = oil[0]
 for i in range(N-1):
-    if oil[i]<min_oil:
-        min_oil=oil[i]
-    
+    min_oil=min(min_oil,oil[i])
     ans+=min_oil*dis[i]
 
 print(ans)   
